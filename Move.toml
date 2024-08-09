@@ -1,0 +1,33 @@
+import random
+
+class Voter:
+    def __init__(self, name):
+        self.name = name
+        self.vote_cast = False
+
+    def cast_vote(self, candidate):
+        if not self.vote_cast:
+            self.vote_cast = True
+            return candidate
+        else:
+            print("You have already cast your vote.")
+            return None
+
+class Candidate:
+    def __init__(self, name):
+        self.name = name
+        self.votes = 0
+
+    def add_vote(self):
+        self.votes += 1
+
+class VotingSystem:
+    def __init__(self):
+        self.candidates = []
+        self.voters = []
+        
+
+
+
+
+ 
